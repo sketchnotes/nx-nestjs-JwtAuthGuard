@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@v-10/core-gql": ["libs/core-gql/src/index.ts"],
+      "@v-10/database": ["libs/database/src/index.ts"],
+      "@v-10/authors": ["libs/authors/src/index.ts"],
+      "@v-10/api-shared": ["libs/api-shared/src/index.ts"],
+      "@v-10/posts": ["libs/posts/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
