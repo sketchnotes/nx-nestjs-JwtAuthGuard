@@ -18,7 +18,8 @@ export class PostsResolver {
   }
 
   @Mutation(returns => Boolean)
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard)  // => throw new InvalidDecoratorItemException(decorator, item, context.name);
+                            // => Error: Invalid guard passed to @UseGuards() decorator (PostsResolver).
   async test1(
     @Context() context: any,
     @Info() info: any,
